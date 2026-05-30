@@ -1,0 +1,32 @@
+{
+  "name": "life-portfolio",
+  "version": "0.1.0",
+  "description": "A personal operating system for life management",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt dev",
+    "build": "nuxt build",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare",
+    "db:migrate": "drizzle-kit migrate:run",
+    "db:studio": "drizzle-kit studio",
+    "db:generate": "drizzle-kit generate:sqlite",
+    "seed": "tsx scripts/seed.ts"
+  },
+  "dependencies": {
+    "@nuxt/ui": "^2.10.0",
+    "drizzle-orm": "^0.31.2",
+    "nuxt": "^3.10.1",
+    "pinia": "^2.1.7",
+    "zod": "^3.22.4",
+    "better-sqlite3": "^9.2.2"
+  },
+  "devDependencies": {
+    "@nuxt/devtools": "^1.0.8",
+    "@types/better-sqlite3": "^7.6.8",
+    "drizzle-kit": "^0.20.14",
+    "tsx": "^4.7.0",
+    "typescript": "^5.3.3"
+  }
+}
